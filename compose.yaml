@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  postgres_db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: iseplife
+      PGDATA: /mnt/data
+    volumes:
+      - ./db_vol_docker/_data:/mnt/data

@@ -13,7 +13,7 @@ spring:
       max-file-size: 7000MB
       max-request-size: 7000MB
 server:
-  port: 8080
+  port: 8000
 
 app:
   name: "iseplife-api"
